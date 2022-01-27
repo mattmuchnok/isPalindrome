@@ -5,10 +5,10 @@ const isPalindrome = word => {
         if (word[i] !== word[k]) {
             return false
         } else {
-            return true
+            k--
         }
-        k--
     }
+    return true
 }
 
 console.log(isPalindrome(`a`))
